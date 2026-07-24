@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "diosesmon-tracker",
+  "version": "${version}",
+  "name": "Diosesmon Tracker",
+  "description": "Trackea tu progreso personal en Diosesmon: Pokemon, eventos de Crianza/Caza, y precios de GTS.",
+  "authors": ["Vos"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.jordansep.diosestracker.DiosesTrackerMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "cobblemon": ">=1.7.3"
+  }
+}

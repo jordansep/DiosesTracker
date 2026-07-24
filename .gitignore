@@ -1,0 +1,12 @@
+.gradle/
+build/
+bin/
+run/
+.vscode/
+.idea/
+*.lock
+*.log
+*.iml
+*.ipr
+*.iws
+out/

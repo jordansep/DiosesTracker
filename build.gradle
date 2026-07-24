@@ -23,9 +23,16 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    // TODO: reemplazar por la coordenada real de Cobblemon para tu versión de Minecraft
-    // Ejemplo (verificar en la doc oficial de Cobblemon, cambia seguido):
-    // modImplementation "com.cobblemon:fabric:${project.cobblemon_version}"
+    // Cobblemon 1.7.3 para 1.21.1
+    modImplementation "com.cobblemon:fabric:${project.cobblemon_version}"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.25"
+
+    testImplementation platform('org.junit:junit-bom:5.10.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
 }
 
 processResources {
